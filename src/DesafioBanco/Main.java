@@ -4,14 +4,14 @@ package DesafioBanco;
 
 public class Main {
     public static void main(String[] args) {
-        Cliente venilton = new Cliente ();
-        venilton.setNome("Venilton");
+        Cliente joaoGuilherme = new Cliente ();
+        joaoGuilherme.setNome("João Guilherme");
 
 
-        Conta cc = new ContaCorrente(venilton);
+        Conta cc = new ContaCorrente(joaoGuilherme);
         cc.depositar(100);
 
-        Conta poupanca = new ContaPoupanca(venilton);
+        Conta poupanca = new ContaPoupanca(joaoGuilherme);
 
 
         cc.imprimirExtrato();
